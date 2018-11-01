@@ -18,7 +18,7 @@ python convert.py yolov3.cfg yolov3.weights model_data/yolo.h5
 python yolo_video.py --image, for image detection mode, OR
 python yolo_video.py --input video_path [--output output_path (optional)]
 ```
-
+If --input 0, the webcam starts to detect objects.
 For Tiny YOLOv3, just do in a similar way, just specify model path and anchor path with `--model model_file` and `--anchors anchor_file`.
 
 ### Usage
