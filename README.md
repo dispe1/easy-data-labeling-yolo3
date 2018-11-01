@@ -3,7 +3,7 @@
 
 ## Introduction
 
-1. Based on [qqwweee / keras-yolo3] (https://github.com/qqwweee/keras-yolo3), we implemented it to easily label the data extracted from the frame of the movie saved as webcam.
+1. Based on [qqwweee / keras-yolo3] (https://github.com/qqwweee/keras-yolo3), we implemented it to easily label the data extracted from the frame of the video saved as webcam.
 ---
 
 ## Quick Start
