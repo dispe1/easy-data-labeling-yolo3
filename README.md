@@ -69,6 +69,7 @@ python splitFrame.py
 
 6. Currently, the train.txt and classes.txt generated for output.avi are now applied to train.py. If you want to learn about a video of a different name, you need to modify the videoName in line 17 of train.py.
 
+7. You need to label enough data to be able to training.
 ## Training
 
 1. Generate your own annotation file and class names file.  
