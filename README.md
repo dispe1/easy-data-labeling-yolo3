@@ -3,7 +3,7 @@
 
 ## Introduction
 
-Based on [qqwweee / keras-yolo3] (https://github.com/qqwweee/keras-yolo3), we implemented it to easily label the data extracted from the frame of the movie saved as webcam.
+1. Based on [qqwweee / keras-yolo3] (https://github.com/qqwweee/keras-yolo3), we implemented it to easily label the data extracted from the frame of the video saved as webcam.
 ---
 
 ## Quick Start
@@ -15,10 +15,10 @@ Based on [qqwweee / keras-yolo3] (https://github.com/qqwweee/keras-yolo3), we im
 ```
 wget https://pjreddie.com/media/files/yolov3.weights
 python convert.py yolov3.cfg yolov3.weights model_data/yolo.h5
-python yolo_video.py [OPTIONS...] --image, for image detection mode, OR
-python yolo_video.py [video_path] [output_path (optional)]
+python yolo_video.py --image, for image detection mode, OR
+python yolo_video.py --input video_path [--output output_path (optional)]
 ```
-
+If --input 0, the webcam starts to detect objects.  
 For Tiny YOLOv3, just do in a similar way, just specify model path and anchor path with `--model model_file` and `--anchors anchor_file`.
 
 ### Usage
@@ -69,6 +69,7 @@ python splitFrame.py
 
 6. Currently, the train.txt and classes.txt generated for output.avi are now applied to train.py. If you want to learn about a video of a different name, you need to modify the videoName in line 17 of train.py.
 
+7. You need to label enough data to be able to training.
 ## Training
 
 1. Generate your own annotation file and class names file.  
